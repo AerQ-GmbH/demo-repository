@@ -2,7 +2,7 @@ name: Bug
 description: File a bug report
 title: bug title
 labels: enhancement
-assignees: @team-member
+assignees: team-member
 body:
   - type: markdown
     attributes:
