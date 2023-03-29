@@ -1,4 +1,3 @@
----
 name: Bug
 description: File a bug report
 body:
@@ -63,5 +62,3 @@ body:
       label: Relevant log output
       description: If applicable, provide relevant log output. No need for backticks here.
       render: shell
-
-
