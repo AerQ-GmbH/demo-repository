@@ -16,26 +16,21 @@ body:
       description: "Which operating system do you use? Please provide the version as well."
       placeholder: "macOS Big Sur 11.5.2"
     validations:
-      required: true  
+      required: true
   - type: input
-    id: php
+    id: version
     attributes:
-      label: PHP Version
-      description: "Please provide the full PHP version that is powering Tinkerwell."
-      placeholder: "PHP 8.0.7, built: Jun  4 2021 01:50:04"
+      label: Software Version
+      description: "Which version of this software is being used"
+      placeholder: "11.5.2"
     validations:
       required: true
-  - type: dropdown
-    id: location
+  - type: input
+    id: browser
     attributes:
-      label: Project Location
-      description: Where is the project located?
-      options:
-        - Local
-        - Remote
-        - Somewhere else (please specify in the description!)
-    validations:
-      required: true
+      label: Browser name and version
+      description: "If applicable, Which browser and version of the browser is being used"
+      placeholder: "chrome 22"
   - type: textarea
     id: bug-description
     attributes:
@@ -43,11 +38,6 @@ body:
       description: What happened?
     validations:
       required: true
-  - type: textarea
-    id: screenshot
-    attributes:
-      label: Screenshots
-      description: If applicable, add screenshots to help explain your problem. You can easily drag and drop screenshots here.
   - type: textarea
     id: steps
     attributes:
@@ -59,12 +49,17 @@ body:
         3. Scroll down to '....'
         4. See error
   - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem. You can easily drag and drop screenshots here.
+  - type: textarea
     id: logs
     attributes:
       label: Relevant log output
       description: If applicable, provide relevant log output. No need for backticks here.
       render: shell
-  - type: input
+  - type: textarea
     id: additional
     attributes:
       label: Addtional Context
