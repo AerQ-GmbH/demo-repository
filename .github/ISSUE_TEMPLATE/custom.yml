@@ -1,8 +1,8 @@
 name: Bug
 description: File a bug report
-title:
+title: bug title
 labels: enhancement
-assignees:
+assignees: @team-member
 body:
   - type: markdown
     attributes:
