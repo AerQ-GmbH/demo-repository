@@ -1,5 +1,8 @@
 name: Bug
 description: File a bug report
+title: ''
+labels: enhancement
+assignees: ''
 body:
   - type: markdown
     attributes:
